@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#train-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container .box{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box span{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
