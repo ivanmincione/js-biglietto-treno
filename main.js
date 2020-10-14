@@ -3,7 +3,7 @@ var distanza = parseInt(prompt( "Inserisci la distanza in km da percorrere"));
 // console.log(distanza);
 
 // chiedere all'utente l'età
-var età = parseInt(prompt("Inserisci la tua età"));
+var eta = parseInt(prompt("Inserisci la tua età"));
 // console.log(età);
 
 // definisco una variabile per il prezzo del biglietto a km, per gli under, per gli over e per gli sconti in base all'età
@@ -15,13 +15,13 @@ var scontoOver = ((costoKm * distanza) * 0.4);
 
 
 // definisco lo stato condizionale per il calcolo del prezzo
-if (età < under) {
+if (eta < under) {
     prezzo = ((costoKm * distanza) - scontoUnder);
-} else if (età > over) {
+} else if (eta > over) {
     prezzo = ((costoKm * distanza) - scontoOver);
 } else {
     prezzo = (costoKm * distanza);
 }
 
 // stampo il prezzo calcolato in pagina
-document.getElementById('prezzobiglietto').innerHTML = prezzo
+document.getElementById('prezzobiglietto').innerHTML = prezzo.toFixed(2);
